@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class movPers : MonoBehaviour
 {
-    Vector3 M;
+    public Vector3 M;
 
     // Start is called before the first frame update
     void Start()
@@ -19,23 +19,28 @@ public class movPers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        M.x = -0.05f;
+        M.y = 0.0f;
+        M.z = 0.0f;
+        transform.Translate(M);
+
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.7f)
         {
             M.x = 0f;
             M.y = 0f;
-            M.z = -0.01f;
+            M.z = -0.05f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.S) && transform.position.z < -10.83)
         {
             M.x = 0f;
             M.y = 0f;
-            M.z = 0.01f;
+            M.z = 0.05f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            if (transform.position.y < 2.5 && transform.position.y > 1.5)
+            if (transform.position.y < 2.5)
             {
                 M.x = 0f;
                 M.y = 0.05f;
@@ -43,8 +48,6 @@ public class movPers : MonoBehaviour
                 transform.Translate(M);
             }
         }
-        M = new Vector3(-0.05f, 0f, 0f);
-        transform.Translate(M);
 
     }
 
