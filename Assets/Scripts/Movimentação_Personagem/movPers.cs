@@ -12,30 +12,30 @@ public class movPers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        M = new Vector3(16.31f, 1.511f, -12.29f);
+        M = new Vector3(16.31f, 1.24f, -12.29f);
         transform.position = M;
     }
 
     // Update is called once per frame
     void Update()
     {
-        M.x = -0.05f;
+        M.x = 0.0f;
         M.y = 0.0f;
-        M.z = 0.0f;
+        M.z = 0.05f; ;
         transform.Translate(M);
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.7f)
         {
-            M.x = 0f;
+            M.x = -0.05f;
             M.y = 0f;
-            M.z = -0.05f;
+            M.z = 0f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.S) && transform.position.z < -10.83)
         {
-            M.x = 0f;
+            M.x = 0.05f;
             M.y = 0f;
-            M.z = 0.05f;
+            M.z = 0f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.Space))
