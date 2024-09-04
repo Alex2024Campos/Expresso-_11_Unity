@@ -24,14 +24,14 @@ public class movPers : MonoBehaviour
         M.z = 0.05f; ;
         transform.Translate(M);
 
-        if (Input.GetKey(KeyCode.W) && transform.position.z > -13.7f)
+        if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
         {
             M.x = -0.05f;
             M.y = 0f;
             M.z = 0f;
             transform.Translate(M);
         }
-        if (Input.GetKey(KeyCode.S) && transform.position.z < -10.83)
+        if (Input.GetKey(KeyCode.S) && transform.position.z < -10.383f)
         {
             M.x = 0.05f;
             M.y = 0f;
@@ -40,7 +40,7 @@ public class movPers : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            if (transform.position.y < 2.5)
+            if (transform.position.y < 2f)
             {
                 M.x = 0f;
                 M.y = 0.05f;
