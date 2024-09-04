@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rua.unity
     guid: f92d302398d4f5e4aad20efd4515ee25
+  - enabled: 1
+    path: Assets/Scenes/Esgoto.unity
+    guid: bccefc0669e1aa342aba21375622ebe7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
