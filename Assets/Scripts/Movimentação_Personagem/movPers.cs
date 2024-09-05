@@ -48,6 +48,13 @@ public class movPers : MonoBehaviour
                 transform.Translate(M);
             }
         }
+        if (transform.position.y <= 0.99f)
+        {
+            M.x = transform.position.x;
+            M.y = 1f;
+            M.z = transform.position.z;
+            transform.position = M;
+        }
 
     }
 
