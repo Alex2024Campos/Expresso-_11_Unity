@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovCam : MonoBehaviour
 {
     public Vector3 Mcam;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +16,11 @@ public class MovCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Mcam.x = 0.05f;
+        /*Mcam.x = 0.05f + Time.deltaTime;
         Mcam.y = 0.0f;
-        Mcam.z = 0.0f;
-        transform.Translate(Mcam);
+        Mcam.z = 0.0f;*/
+        Mcam.x = player.transform.position.x + Time.deltaTime;
+        transform.position = Mcam;
     }
 
 }

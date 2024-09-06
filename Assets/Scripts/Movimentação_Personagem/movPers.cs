@@ -26,14 +26,14 @@ public class movPers : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
         {
-            M.x = -0.05f;
+            M.x = -0.05f + Time.deltaTime;
             M.y = 0f;
             M.z = 0f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.S) && transform.position.z < -10.383f)
         {
-            M.x = 0.05f;
+            M.x = 0.05f + Time.deltaTime;
             M.y = 0f;
             M.z = 0f;
             transform.Translate(M);
@@ -43,16 +43,16 @@ public class movPers : MonoBehaviour
             if (transform.position.y < 2f)
             {
                 M.x = 0f;
-                M.y = 0.05f;
+                M.y = 0.05f + Time.deltaTime;
                 M.z = 0f;
                 transform.Translate(M);
             }
         }
         if (transform.position.y <= 0.99f)
         {
-            M.x = transform.position.x;
-            M.y = 1f;
-            M.z = transform.position.z;
+            M.x = transform.position.x + Time.deltaTime;
+            M.y = 1f + Time.deltaTime;
+            M.z = transform.position.z + Time.deltaTime;
             transform.position = M;
         }
 

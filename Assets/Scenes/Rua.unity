@@ -8932,7 +8932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contador: {fileID: 698864559}
-  tempoRestante: 95
 --- !u!1 &954291871
 GameObject:
   m_ObjectHideFlags: 0
@@ -12183,7 +12182,7 @@ GameObject:
   - component: {fileID: 1316945335}
   - component: {fileID: 1316945334}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CriadorCenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13475,6 +13474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mcam: {x: 0, y: 0, z: 0}
+  player: {fileID: 288118899}
 --- !u!1001 &1437022343
 PrefabInstance:
   m_ObjectHideFlags: 0

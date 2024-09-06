@@ -6,7 +6,7 @@ using UnityEngine;
 public class cronometro : MonoBehaviour
 {
     public TextMeshProUGUI contador;
-    [SerializeField] float tempoRestante;
+    float tempoRestante = 599;
     /*int segundos = 59;
     int minutos;*/
     // Start is called before the first frame update

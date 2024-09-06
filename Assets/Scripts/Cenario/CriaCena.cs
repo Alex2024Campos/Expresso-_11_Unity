@@ -13,14 +13,14 @@ public class CriaCena : MonoBehaviour
     void Start()
     {
         personagem = GameObject.Find("player").gameObject;
-        proxiPos = new Vector3(4.33f + posicao , 0f, 0f);
+        proxiPos = new Vector3(4.33f + posicao, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
         // Verifica se o personagem passou da posição do primeiro bloco
-        if (personagem.transform.position.x - transform.position.x <= 15f)
+        if (personagem.transform.position.x - transform.position.x <= 15f + Time.deltaTime)
         {
             //int aleatorio = Random.Range(0, ruas.Length);
             Instantiate(GameObject.FindGameObjectWithTag("ruas/rua1"), proxiPos, Quaternion.identity);
