@@ -14,7 +14,7 @@ public class DeleteCena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (personagem.transform.position.x  <= transform.position.x - 70f)
+        if (personagem.transform.position.x + Time.deltaTime <= transform.position.x - 70f)
         {
             Destroy(GameObject.FindGameObjectWithTag("ruas/rua1"));
         }
