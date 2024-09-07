@@ -19,9 +19,9 @@ public class movPers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        M.x = 0.0f;
+        M.x = 0f;
         M.y = 0.0f;
-        M.z = 0.05f + Time.deltaTime; 
+        M.z = 0.05f + Time.deltaTime;
         transform.Translate(M);
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
