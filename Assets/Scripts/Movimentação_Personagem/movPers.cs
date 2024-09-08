@@ -48,7 +48,7 @@ public class movPers : MonoBehaviour
                 transform.Translate(M);
             }
         }
-        if (transform.position.y <= -2.970006f)
+        if (transform.position.y <= 1)
         {
             M.x = transform.position.x + Time.deltaTime;
             M.y = 1f + Time.deltaTime;

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ruas/rua1
+  - ruas/rua2
+  - ruas/rua3
   layers:
   - Default
   - TransparentFX
