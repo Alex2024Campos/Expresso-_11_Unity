@@ -8,10 +8,15 @@ using Random = UnityEngine.Random;
 public class movPers : MonoBehaviour
 {
     public Vector3 M;
+    private CharacterController controller;
+    private Animator animacao;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        controller = GetComponent<CharacterController>();
+        animacao = GetComponent<Animator>();
         M = new Vector3(16.31f, 1.24f, -12.29f);
         transform.position = M;
     }
@@ -56,6 +61,10 @@ public class movPers : MonoBehaviour
             transform.position = M;
         }
 
+        //Ataque "Voadora"
+        if (Input.GetKey(KeyCode.A)) {
+            animacao.SetInteger("Mediador", 3);
+        }
     }
 
 }
