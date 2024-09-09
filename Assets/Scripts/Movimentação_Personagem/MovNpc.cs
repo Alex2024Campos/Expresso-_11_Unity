@@ -1,23 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MovNpc : MonoBehaviour
 {
-    public Vector3 Mnpc;
+    GameObject spawn;
+    Vector3 Mnpc;
     // Start is called before the first frame update
     void Start()
     {
-        Mnpc = new Vector3();
+        spawn = GameObject.Find("Spawn").gameObject;
+        Mnpc = spawn.transform.position;
         transform.position = Mnpc;
+        transform.Rotate(0f, 90f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Mnpc.x = -0.001f + Time.deltaTime;
+        Mnpc.x = 0f;
         Mnpc.y = 0f;
-        Mnpc.z = 0f;
+        Mnpc.z = 5f * Time.deltaTime;
         transform.Translate(Mnpc);
     }
 }

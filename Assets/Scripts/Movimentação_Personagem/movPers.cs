@@ -27,7 +27,7 @@ public class movPers : MonoBehaviour
     {
         M.x = 0f;
         M.y = 0.0f;
-        M.z = 0.05f + Time.deltaTime;
+        M.z = 2f * Time.deltaTime;
         transform.Translate(M);
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
@@ -63,7 +63,7 @@ public class movPers : MonoBehaviour
         }
 
         //Ataque "Voadora"
-        if (Input.GetKey(KeyCode.A)) {
+        if (Input.GetKeyUp(KeyCode.A)) {
             animacao.SetInteger("Mediador", 3);
         }
     }

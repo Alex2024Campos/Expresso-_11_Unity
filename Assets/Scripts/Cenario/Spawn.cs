@@ -20,6 +20,8 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandom", spawnTime, spawnDelay);
+      
+
     }
 
     // Update is called once per frame
