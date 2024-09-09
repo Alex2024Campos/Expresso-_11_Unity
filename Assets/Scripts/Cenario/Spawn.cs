@@ -6,9 +6,9 @@ public class Spawn : MonoBehaviour
 {
     int random;
     Vector3 posicao;
+    public Vector3 posicaoInicial;
     public GameObject[] obstaculos;
     public float spawnTime, spawnDelay;
-
     public float velocidade = 5.0f;      // Velocidade do movimento para frente (eixo X)
     public float velocidadeZigZag = 3.0f; // Velocidade do movimento zig-zag no eixo Z
     public float limiteSuperior = -10.343f;  // Limite superior do zig-zag no eixo Z (mais próximo de 0)
@@ -20,7 +20,9 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandom", spawnTime, spawnDelay);
-      
+        transform.position = posicaoInicial;
+        posicaoInicial = new Vector3(0f,0f,0f);
+
 
     }
 
