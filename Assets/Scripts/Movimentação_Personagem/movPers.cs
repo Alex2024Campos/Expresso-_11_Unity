@@ -27,7 +27,7 @@ public class movPers : MonoBehaviour
     {
         M.x = 0f;
         M.y = 0.0f;
-        M.z = 2f * Time.deltaTime;
+        M.z = 3f * Time.deltaTime;
         transform.Translate(M);
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
