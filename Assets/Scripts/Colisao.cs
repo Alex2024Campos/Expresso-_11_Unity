@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Colisao : MonoBehaviour
 {
-    cronometro cronometro;
+    cronometro cronometroo;
     movPers movimentacao;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cronometroo = GameObject.FindGameObjectWithTag("Contador").GetComponent<cronometro>();
+        movimentacao = GameObject.FindGameObjectWithTag("Player").GetComponent<movPers>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class Colisao : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        cronometro.tempoRestante -= 5;
+        cronometroo.tempoRestante -= 5;
         movimentacao.M.z -= 10.0f;
     }
 }

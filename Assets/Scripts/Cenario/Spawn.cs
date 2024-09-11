@@ -14,8 +14,6 @@ public class Spawn : MonoBehaviour
     public float limiteSuperior = -10.343f;  // Limite superior do zig-zag no eixo Z (mais próximo de 0)
     public float limiteInferior = -13.904f;
     private int direcaoZ = 1; // Direção do movimento no eixo Z (1 para cima, -1 para baixo)
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +48,8 @@ public class Spawn : MonoBehaviour
     }
     void SpawnRandom()
     {
-        random = Random.Range(0 , obstaculos.Length);
+        random = Random.Range(0, obstaculos.Length);
         Instantiate(obstaculos[random], transform.position, transform.rotation);
+        Debug.Log(transform.position);
     }
 }
