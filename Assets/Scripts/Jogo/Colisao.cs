@@ -12,13 +12,6 @@ public class Colisao : MonoBehaviour
         cronometroo = GameObject.FindGameObjectWithTag("Contador").GetComponent<cronometro>();
         movimentacao = GameObject.FindGameObjectWithTag("Player").GetComponent<movPers>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         cronometroo.tempoRestante -= 5;
