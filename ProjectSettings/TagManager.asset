@@ -8,6 +8,7 @@ TagManager:
   - ruas/rua2
   - ruas/rua3
   - Contador
+  - MenuPausa
   layers:
   - Default
   - TransparentFX
