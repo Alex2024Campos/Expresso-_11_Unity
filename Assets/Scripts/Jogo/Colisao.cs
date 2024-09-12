@@ -14,7 +14,10 @@ public class Colisao : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        cronometroo.tempoRestante -= 5;
-        movimentacao.M.z -= 10.0f;
+        if (collision.gameObject.tag == "Player") {
+            cronometroo.tempoRestante -= 5;
+            Destroy(this.gameObject);
+        }
+        
     }
 }

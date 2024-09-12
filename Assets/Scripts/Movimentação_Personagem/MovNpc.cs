@@ -19,9 +19,13 @@ public class MovNpc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Mnpc.x = 0f;
-        Mnpc.y = 0f;
-        Mnpc.z = 5f * Time.deltaTime;
-        transform.Translate(Mnpc);
+
+        {
+            Mnpc.x = 0f;
+            Mnpc.y = 0f;
+            Mnpc.z = 5f * Time.deltaTime;
+            transform.Translate(Mnpc);
+        }
     }
-}
+    }
+
