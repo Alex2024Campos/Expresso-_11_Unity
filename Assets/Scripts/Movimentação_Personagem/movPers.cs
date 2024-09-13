@@ -32,14 +32,14 @@ public class movPers : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && transform.position.z > -13.904f)
         {
-            M.x = -0.05f + Time.deltaTime;
+            M.x = -3f * Time.deltaTime;
             M.y = 0f;
             M.z = 0f;
             transform.Translate(M);
         }
         if (Input.GetKey(KeyCode.S) && transform.position.z < -10.383f)
         {
-            M.x = 0.05f + Time.deltaTime;
+            M.x = 3f * Time.deltaTime;
             M.y = 0f;
             M.z = 0f;
             transform.Translate(M);
