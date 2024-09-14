@@ -18,9 +18,8 @@ public class MusicaScript : MonoBehaviour
         if (menupausa.jogoEstaPausado == true)
         {
             musica.SetActive(false);
-        }   
-        else
-        {
+        }
+        else{  
             musica.SetActive(true);
         }
     }
