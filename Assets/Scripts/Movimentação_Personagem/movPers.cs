@@ -8,8 +8,10 @@ using Random = UnityEngine.Random;
 public class movPers : MonoBehaviour
 {
     public Vector3 M;
+    public float timervoadora = 5;
     private CharacterController controller;
     private Animator animacao;
+
 
 
 
@@ -63,9 +65,19 @@ public class movPers : MonoBehaviour
         }
 
         //Ataque "Voadora"
-        /*if (Input.GetKeyUp(KeyCode.A)) {
-            animacao.SetInteger("Mediador", 3);
+
+
+        /*if (Input.GetKeyUp(KeyCode.A))
+        {
+            if (timervoadora > 0)
+            {
+                animacao.SetInteger("Mediador", 3);
+                timervoadora -= Time.deltaTime;
+            }
+            else {
+                animacao.SetInteger("Mediador", 0);
+            }
         }*/
     }
 
-}
+    }
