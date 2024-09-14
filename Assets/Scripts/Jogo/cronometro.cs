@@ -6,30 +6,33 @@ using UnityEngine;
 public class cronometro : MonoBehaviour
 {
     public TextMeshProUGUI contador;
-    public float tempoRestante = 599;
-    /*int segundos = 59;
-    int minutos;*/
+    public GameObject telaGameOver;
+    public GameObject crnmetro;
+    public GameObject musica;
+    GameOver gameoverscript;
+    [SerializeField] public float tempoRestante = 599;
     // Start is called before the first frame update
     void Start()
     {
+        telaGameOver.SetActive(false);
+        gameoverscript = GameObject.FindGameObjectWithTag("TelaGameOver").GetComponent<GameOver>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*for (minutos = 9; minutos > 0; segundos--)
+        if (tempoRestante > 0)
         {
-            if (segundos == 0)
-            {
-                minutos--;
-                segundos = 59;
-            }
-            else if (segundos != 0)
-            {
-                int minutos;
-                int segundos;
-            }*/
-        tempoRestante -= Time.deltaTime;
+            tempoRestante -= Time.deltaTime;
+        }
+        else if (tempoRestante <= 0)
+        {
+            telaGameOver.SetActive(true);
+            Time.timeScale = 0.0f;
+            crnmetro.SetActive(false);
+            musica.SetActive(false);
+            gameoverscript.Reinicar();
+        }
         int minutos = Mathf.FloorToInt(tempoRestante / 60);
         int segundos = Mathf.FloorToInt(tempoRestante % 60);
         contador.text = string.Format("{0:00}:{1:00}", minutos, segundos);

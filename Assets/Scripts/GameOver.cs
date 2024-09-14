@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Jogar : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
-    public void IniciarJogo()
+    public void Reinicar()
     {
         SceneManager.LoadSceneAsync("Rua");
         Time.timeScale = 1.0f;

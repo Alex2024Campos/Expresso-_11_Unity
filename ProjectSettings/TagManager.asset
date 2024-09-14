@@ -9,6 +9,7 @@ TagManager:
   - ruas/rua3
   - Contador
   - MenuPausa
+  - TelaGameOver
   layers:
   - Default
   - TransparentFX

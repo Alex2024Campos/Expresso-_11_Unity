@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Esgoto.unity
     guid: bccefc0669e1aa342aba21375622ebe7
+  - enabled: 1
+    path: "Assets/Scenes/Esta\xE7\xE3o.unity"
+    guid: a0c4208cb1c3c1e428f62ba9bd4ca47e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -8,7 +8,7 @@ public class MenuPausa : MonoBehaviour
     public bool jogoEstaPausado = false;
     public GameObject menuPausa;
     public GameObject cronometro;
-
+    public GameObject musica;
     private void Start()
     {
         menuPausa.SetActive(false);
@@ -33,6 +33,7 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = 0.0f;
         jogoEstaPausado = true;
         cronometro.SetActive(false);
+        musica.SetActive(false);
     }
 
     public void Continuar()
@@ -41,6 +42,7 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = 1.0f;
         jogoEstaPausado = false;
         cronometro.SetActive(true);
+        musica.SetActive(true);
     }
 
     public void voltarMenu()
