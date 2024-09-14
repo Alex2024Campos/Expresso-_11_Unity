@@ -57,7 +57,7 @@ public class movPers : MonoBehaviour
         if (transform.position.y <= 1)
         {
             M.x = transform.position.x + Time.deltaTime;
-            M.y = 1f + Time.deltaTime;
+            M.y = 1.1f;
             M.z = transform.position.z + Time.deltaTime;
             transform.position = M;
         }

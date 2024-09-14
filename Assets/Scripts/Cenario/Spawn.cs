@@ -26,7 +26,11 @@ public class Spawn : MonoBehaviour
 
 
     }
-
+    void SpawnRandom()
+    {
+        random = Random.Range(0, obstaculos.Length);
+        Instantiate(obstaculos[random], transform.position, transform.rotation);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -38,13 +42,12 @@ public class Spawn : MonoBehaviour
                 // Movimento para frente no eixo X
                 Vector3 movimentoParaFrente = Vector3.right * velocidade * Time.deltaTime;
 
-                // Movimento em zig-zag no eixo Z
-                Vector3 movimentoZigZag = Vector3.forward * direcaoZ * velocidadeZigZag * Time.deltaTime;
-
                 // Atualiza a posição do objeto combinando os dois movimentos
-                transform.Translate(movimentoParaFrente + movimentoZigZag);
+                transform.Translate(movimentoParaFrente);
             }
-
+            // Movimento em zig-zag no eixo Z
+            Vector3 movimentoZigZag = Vector3.forward * direcaoZ * velocidadeZigZag * Time.deltaTime;
+            transform.Translate(movimentoZigZag);
 
             // Verifica se o objeto atingiu o limite superior ou inferior no eixo Z
             if (transform.position.z >= limiteSuperior)
@@ -63,15 +66,16 @@ public class Spawn : MonoBehaviour
             {
 
                 // Movimento para frente no eixo X
-                Vector3 movimentoParaFrente = Vector3.right * velocidade * Time.deltaTime;
+                Vector3 movimentoParaFrente = Vector3.left * velocidade * Time.deltaTime;
 
-                // Movimento em zig-zag no eixo Z
-                Vector3 movimentoZigZag = Vector3.forward * direcaoZ * velocidadeZigZag * Time.deltaTime;
+                transform.Translate(movimentoParaFrente);
 
                 // Atualiza a posição do objeto combinando os dois movimentos
-                transform.Translate(movimentoParaFrente + movimentoZigZag);
-            }
 
+            }
+            // Movimento em zig-zag no eixo Z
+            Vector3 movimentoZigZag = Vector3.forward * direcaoZ * velocidadeZigZag * Time.deltaTime;
+            transform.Translate(movimentoZigZag);
 
             // Verifica se o objeto atingiu o limite superior ou inferior no eixo Z
             if (transform.position.z >= limiteSuperior)
@@ -86,11 +90,6 @@ public class Spawn : MonoBehaviour
 
 
         }
-        void SpawnRandom()
-        {
-            random = Random.Range(0, obstaculos.Length);
-            Instantiate(obstaculos[random], transform.position, transform.rotation);
-            Debug.Log(transform.position);
-        }
+
     }
 }
