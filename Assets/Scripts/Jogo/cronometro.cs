@@ -10,7 +10,7 @@ public class cronometro : MonoBehaviour
     public GameObject crnmetro;
     public GameObject musica;
     GameOver gameoverscript;
-    [SerializeField] public float tempoRestante = 599;
+    public float tempoRestante = 295;
     // Start is called before the first frame update
     void Start()
     {

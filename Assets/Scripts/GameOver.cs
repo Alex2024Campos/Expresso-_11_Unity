@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public void Reinicar()
     {
-        SceneManager.LoadSceneAsync("Rua");
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
         Time.timeScale = 1.0f;
     }
 }
