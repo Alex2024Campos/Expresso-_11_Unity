@@ -63,9 +63,9 @@ public class movPers : MonoBehaviour
         }
 
         //Ataque "Voadora"
-        if (Input.GetKeyUp(KeyCode.A)) {
+        /*if (Input.GetKeyUp(KeyCode.A)) {
             animacao.SetInteger("Mediador", 3);
-        }
+        }*/
     }
 
 }

@@ -10,6 +10,7 @@ TagManager:
   - Contador
   - MenuPausa
   - TelaGameOver
+  - MenuFinal
   layers:
   - Default
   - TransparentFX
