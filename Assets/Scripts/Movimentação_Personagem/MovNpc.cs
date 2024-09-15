@@ -27,5 +27,5 @@ public class MovNpc : MonoBehaviour
             transform.Translate(Mnpc);
         }
     }
-    }
+}
 

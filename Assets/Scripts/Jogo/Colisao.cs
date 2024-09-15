@@ -15,7 +15,7 @@ public class Colisao : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player") {
-            cronometroo.tempoRestante -= 5;
+            cronometroo.tempoRestante -= 10;
             Destroy(this.gameObject);
         }
         

@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public class movPers : MonoBehaviour
 {
     public Vector3 M;
-    public float timervoadora = 5;
+    private bool canjump = true;
     private CharacterController controller;
     private Animator animacao;
     // Start is called before the first frame update
@@ -42,16 +42,24 @@ public class movPers : MonoBehaviour
             M.z = 0f;
             transform.Translate(M);
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && transform.position.y < 2f && canjump == true)
         {
-            if (transform.position.y < 2f)
-            {
-                M.x = 0f;
-                M.y = 0.05f + Time.deltaTime;
-                M.z = 0f;
-                transform.Translate(M);
-            }
+            M.x = 0f;
+            M.y = 0.05f + Time.deltaTime;
+            M.z = 0f;
+            transform.Translate(M);
         }
+        if (transform.position.y >= 2f)
+        {
+            canjump = false;
+        }
+        // NÃO FUNCIONA POR ALGUM MOTIVO!!!!
+        else if (transform.position.y < 2f){
+            canjump = true;
+        }
+
+
+
         if (transform.position.y <= 1)
         {
             M.x = transform.position.x + Time.deltaTime;
