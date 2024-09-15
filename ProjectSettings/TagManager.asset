@@ -11,6 +11,7 @@ TagManager:
   - MenuPausa
   - TelaGameOver
   - MenuFinal
+  - Musica
   layers:
   - Default
   - TransparentFX

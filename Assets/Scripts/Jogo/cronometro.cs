@@ -11,6 +11,7 @@ public class cronometro : MonoBehaviour
     public GameObject musica;
     GameOver gameoverscript;
     public float tempoRestante = 295;
+
     // Start is called before the first frame update
     void Start()
     {

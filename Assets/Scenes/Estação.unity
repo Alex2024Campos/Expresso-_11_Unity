@@ -3059,6 +3059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223976523}
   - component: {fileID: 223976522}
+  - component: {fileID: 223976524}
   m_Layer: 0
   m_Name: Musica
   m_TagString: Untagged
@@ -3178,6 +3179,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &223976524
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223976521}
+  m_Enabled: 1
 --- !u!1 &229639784
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,7 +8942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 643430355}
   - component: {fileID: 643430354}
-  - component: {fileID: 643430353}
   - component: {fileID: 643430356}
   m_Layer: 0
   m_Name: Main Camera
@@ -8942,14 +8950,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &643430353
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643430350}
-  m_Enabled: 0
 --- !u!20 &643430354
 Camera:
   m_ObjectHideFlags: 0
@@ -16025,8 +16025,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 223976521}
     - target: {fileID: 5501815339529192362, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501815339529192362, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: tempoRestante
-      value: 295
+      value: 177
       objectReference: {fileID: 0}
     - target: {fileID: 6976194969570391018, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: m_Name

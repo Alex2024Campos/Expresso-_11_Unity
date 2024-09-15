@@ -11,10 +11,6 @@ public class movPers : MonoBehaviour
     public float timervoadora = 5;
     private CharacterController controller;
     private Animator animacao;
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -62,22 +58,6 @@ public class movPers : MonoBehaviour
             M.y = 1.1f;
             M.z = transform.position.z + Time.deltaTime;
             transform.position = M;
-        }
-
-        //Ataque "Voadora"
-
-
-        /*if (Input.GetKeyUp(KeyCode.A))
-        {
-            if (timervoadora > 0)
-            {
-                animacao.SetInteger("Mediador", 3);
-                timervoadora -= Time.deltaTime;
-            }
-            else {
-                animacao.SetInteger("Mediador", 0);
-            }
-        }*/
+        }   
     }
-
-    }
+}
