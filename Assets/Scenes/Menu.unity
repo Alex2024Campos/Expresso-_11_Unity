@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f665373e9cf3e3646afab05d728d7340, type: 3}
+  m_Texture: {fileID: 2800000, guid: c0a815b2a1a60764588caae491c87005, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3012,6 +3012,7 @@ GameObject:
   - component: {fileID: 956267636}
   - component: {fileID: 956267638}
   - component: {fileID: 956267637}
+  - component: {fileID: 956267639}
   m_Layer: 5
   m_Name: PainelSobreNos
   m_TagString: Untagged
@@ -3089,6 +3090,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956267635}
   m_CullTransparentMesh: 1
+--- !u!114 &956267639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956267635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4232af7a382f1254d9f82513ca755b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &964343211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5964,7 +5977,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1900484560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 956267639}
+        m_TargetAssemblyTypeName: perfis, Assembly-CSharp
+        m_MethodName: GamesClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1900484560
 MonoBehaviour:
   m_ObjectHideFlags: 0
