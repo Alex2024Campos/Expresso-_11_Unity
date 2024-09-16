@@ -16495,6 +16495,30 @@ PrefabInstance:
       propertyPath: musica
       value: 
       objectReference: {fileID: 223976521}
+    - target: {fileID: 1598899929566757144, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.72156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598899929566757144, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.02745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598899929566757144, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294948871
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344019451030384919, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344019451030384919, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344019451030384919, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281414143
+      objectReference: {fileID: 0}
     - target: {fileID: 5470513537265520541, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: m_LocalPosition.x
       value: 371.6372
@@ -16550,6 +16574,18 @@ PrefabInstance:
     - target: {fileID: 6976194969570391018, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284903010205317648, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284903010205317648, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_Color.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284903010205317648, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
+      propertyPath: m_Color.g
+      value: 0.015686275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
