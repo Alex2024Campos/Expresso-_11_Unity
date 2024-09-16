@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class Sobre : MonoBehaviour
 {
+    public GameObject sobrenos;
+    public GameObject jogar;
+    public GameObject titulo;
+    private void Start()
+    {
+        sobrenos.SetActive(false);
+    }
     public void Click()
     {
-        Application.OpenURL("https://bsky.app/profile/michelinidev.bsky.social");
+        sobrenos.SetActive(true);
+        jogar.SetActive(false);
+        titulo.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

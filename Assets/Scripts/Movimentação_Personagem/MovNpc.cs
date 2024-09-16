@@ -26,6 +26,9 @@ public class MovNpc : MonoBehaviour
             Mnpc.z = 5f * Time.deltaTime;
             transform.Translate(Mnpc);
         }
+        if (transform.position.x >= 17.45f){
+            Destroy(this.gameObject);
+        }
     }
 }
 
