@@ -56,10 +56,10 @@ ________________________________________________________________________________
  -> Jogar: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
  <br>
  
- -> MenuPausa:
+ -> MenuPausa: É o código que ativa e desativa o menu de pausa do jogo
  <br>
  
- -> Sobre:
+ -> Sobre: O script que controla o aba Sobre Nós do menu principal 
  <br>
  
  -> Trocar_cena: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
@@ -91,7 +91,9 @@ ________________________________________________________________________________
 # UI
 - Menu: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), que é apenas ativado ao clique do botão, utilizando o comando SetActive(True)
 - Cronometro: O Cronometro é novamente feito com um Text - TextMeshPro, na aba do código é primeiro definido a quantidade de segundos para o jogo. Depois no método Update() é criada uma condiçãp: Se tempoRestate > 0, diminua o tempo por deltaTime, isso faz com que o cronometro diminua em um valor constante, independente do quão potente é o computador, caso contrário, ele mostra a tela de derrota. Logo após isso, são criadas duas variáveis locais: minutos e segundos, que recebem o valor de tempoRestante em segundos e formatam usando divisão e módulo para o valor desejado. Depois de utiliza o comando String.Format para formatar e mostrar o tempo restante de uma forma melhor
-- Game Over: É um painel com um 
+- Game Over: É um painel transparente, que é ativado a partir do script do cronômetro, quando o valor do tempoRestante chega a 0, é composto por um Text e um Button e um comando Time.timescale = 0.0f, para pausar o jogo completamenete. O botão tem o código SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name) que carrega a cena atual novamente
+- Menu de Pausa: É um painel com três botões: Continuar, Voltar ao Menu e Voltar ao Desktop. Para pausar, é usado o comando Time.TimeScale = 0.0f, que deixa o jogo pausado, logo após, é carregado o menu de pausa com o SetActive(true). Para voltar ao menu, é utilizado o comando SceneManager.LoadSceneAsync("Menu"), para ir ao desktop, é utilizado o Application.Exit(), para continuar é apenas desativado o menu de pausa, e o valor do Time.timescale é colocado em 1, que é a velocidade padrão do jogo
+- Final: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
 
 ## Referências:
 
