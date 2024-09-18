@@ -1,28 +1,24 @@
 # Expresso_11
 >[!Important]
+` - Projeto:`
 >- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
 >- Escola: Etec Prof. Basilides de Godoy.
 >- Sobre: Repositório para a documentação do jogo Expresso 11, desenvolvido para a feira cultural da Etec Prof. Basilides de Godoy.
 >- Datas: Gravar as fases (Quinta), entregar a documentação (Quinta), apresentação do jogo (Quinta).
 >- Projeto (drive): https://drive.google.com/drive/u/0/folders/11AYAafGOKnD0kKMby2S_ybv2LrDbRA2h
 
+>[!Important]
+> ` - Equipe:`
+>- Alex Campos de Oliveira
+>- Christian Varandas
+>- Guilherme Henrique
+>- Igor Michelini
+
 > `Alterações do Jogo`
 > ### Script CriarCena (retirado): O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
 > ### Cena "Esgoto"  (retirado): Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
 > ### Ataque "Voadora"  (retirado): Devido aos problemas para fazer a animação funcionar e a criação de uma colisão para eliminar os inimigos ao ser utilizada, a voadora foi retirada do jogo.
 > ### Timer (alterado): Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para x minuitos (!!!!colocar o timer) na "Rua" e x minutos (!!!!!!colocartambém) na "Estação".
-_________________________________________________________________________________________________________________________________ 
-
-
-
-## Nomes:
--> Alex Campos de Oliveira
-<br>
--> Christian Varandas
-<br>
--> Guilherme Henrique
-<br>
--> Igor Michelini
 _________________________________________________________________________________________________________________________________ 
 
 
