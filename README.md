@@ -22,7 +22,7 @@
 >- `Timer (alterado)`: Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para 5 minutos na "Rua" e 3 minutos na "Estação".
 >- `Sobre nós (adicionado)`: Uma interface com fotos dos desenvolvedores do expresso 11 e com botões que levão para as contas do GitHub de cada um foi adicionada durante o projeto.
 
-> [!TIP]
+> [!NOTE]
 >- `Gameplay`:
 
 https://github.com/user-attachments/assets/10ab424d-d603-40bb-a4b7-0a90c57bcb2d
