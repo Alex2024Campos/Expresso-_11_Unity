@@ -35,13 +35,29 @@ ________________________________________________________________________________
  Certo dia, enquanto estava afundado em suas fantasias do sono, Juninho é acordado pelo temível som de seu despertador – “Já são 10:45”, a fatídica voz robótica do alarme se mostrou o suficiente para fazê-lo levantar em desespero, preparar as suas coisas às pressas e se retirar de casa com sua mochila, não conseguindo nem mesmo se despedir de Alexandria, pois a pontualidade em seu emprego é rígida. 
  Ele então parte de sua morada na direção da estação mais próxima na tentativa de chegar a tempo.
 _________________________________________________________________________________________________________________________________ 
+
+
+
+
+
+
+
 # Animações:
 - As animações foram planejadas e organizadas com base em dois vídeos do Youtube (https://youtu.be/cndsQp-Yuzw?si=o3vLwQLL8izTha3g e https://youtu.be/ugqhZBJpH9w?si=zt8iy4wPhLOBkDRq). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, aonde tiveram suas texturas carregadas e os tipos separados por pastas (animações, personagens e controllers). Para cada personagem e NPC, foi-se feito um controller para fazer o carregamento da animação sem nenhum problema, pois cada uma deveria ser carregada com o modelo que fosse ser utilizado na Mixamo. Com os controller criados, só foi necessário puxar as animações para dentro do painel e deixa-las como default em cada um. Vale ressaltar que, após baixadas as animações com os modelos de cada personagem, as mesmas foram retiradas com ctrl + D da pasta que já vinham e essa pasta, apagada.
 _________________________________________________________________________________________________________________________________ 
 
+
+
+
+
+
 # Colisões:
 - As colisões de nosso jogo foram utilizadas, principalmente, para a criação do contato, diminuição do "timer" do personagem principal e para a destruição dos Npcs que colidissem (os inimigos do jogo), mas também utilizamos delas para fazer a troca de cenas e trazer o aumento do som da música do jogo. A príncipio, foram-se feitos objetos vazios e só após isso, adicionadas as colisões (box collider) nesses objetos vazios (houve a necessidade de alterar as caixas de colisões deles), vale também ressaltar que essa tátitca foi utilizada somente para: a ação de trocar de cena e o aumento do som. Agora, para os Npcs do jogo foi somente adicionado um Box Collider nos modelos pré-separados para fazer a identificação da colisão e, no caso da destruição dos inimigos (que são clonados para a repetição dos mesmos), foi-se feito um código para deleta-los após ultrapassarem determinada distância no eixo X.
 _________________________________________________________________________________________________________________________________ 
+
+
+
+
 
 
 
@@ -116,7 +132,23 @@ ________________________________________________________________________________
  
  -> Sobre: O script que controla o aba "Sobre Nós" do menu principal 
  <br>
+ _________________________________________________________________________________________________________________________________ 
+
+
+
+
+
+
+# UI
+- Menu: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), que é apenas ativado ao clique do botão, utilizando o comando SetActive(True)
+- Cronometro: O Cronometro é novamente feito com um Text - TextMeshPro, na aba do código é primeiro definido a quantidade de segundos para o jogo. Depois no método Update() é criada uma condiçãp: Se tempoRestate > 0, diminua o tempo por deltaTime, isso faz com que o cronometro diminua em um valor constante, independente do quão potente é o computador, caso contrário, ele mostra a tela de derrota. Logo após isso, são criadas duas variáveis locais: minutos e segundos, que recebem o valor de tempoRestante em segundos e formatam usando divisão e módulo para o valor desejado. Depois de utiliza o comando String.Format para formatar e mostrar o tempo restante de uma forma melhor
+- Game Over: É um painel transparente, que é ativado a partir do script do cronômetro, quando o valor do tempoRestante chega a 0, é composto por um Text e um Button e um comando Time.timescale = 0.0f, para pausar o jogo completamenete. O botão tem o código SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name) que carrega a cena atual novamente
+- Menu de Pausa: É um painel com três botões: Continuar, Voltar ao Menu e Voltar ao Desktop. Para pausar, é usado o comando Time.TimeScale = 0.0f, que deixa o jogo pausado, logo após, é carregado o menu de pausa com o SetActive(true). Para voltar ao menu, é utilizado o comando SceneManager.LoadSceneAsync("Menu"), para ir ao desktop, é utilizado o Application.Exit(), para continuar é apenas desativado o menu de pausa, e o valor do Time.timescale é colocado em 1, que é a velocidade padrão do jogo
+- Final: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
 _________________________________________________________________________________________________________________________________ 
+
+
+
 
 
 
@@ -126,15 +158,17 @@ ________________________________________________________________________________
 
 
 
+
+
+
+
 # AssetStore e Criação de Cena:
 - Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes) abaixo não foram utilizados para a composição do cenário, sendo retirados devido a falta de outros modelos de texturas semelhantes para complementa-los, no entanto, connseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde um continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados.
 
-# UI
-- Menu: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), que é apenas ativado ao clique do botão, utilizando o comando SetActive(True)
-- Cronometro: O Cronometro é novamente feito com um Text - TextMeshPro, na aba do código é primeiro definido a quantidade de segundos para o jogo. Depois no método Update() é criada uma condiçãp: Se tempoRestate > 0, diminua o tempo por deltaTime, isso faz com que o cronometro diminua em um valor constante, independente do quão potente é o computador, caso contrário, ele mostra a tela de derrota. Logo após isso, são criadas duas variáveis locais: minutos e segundos, que recebem o valor de tempoRestante em segundos e formatam usando divisão e módulo para o valor desejado. Depois de utiliza o comando String.Format para formatar e mostrar o tempo restante de uma forma melhor
-- Game Over: É um painel transparente, que é ativado a partir do script do cronômetro, quando o valor do tempoRestante chega a 0, é composto por um Text e um Button e um comando Time.timescale = 0.0f, para pausar o jogo completamenete. O botão tem o código SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name) que carrega a cena atual novamente
-- Menu de Pausa: É um painel com três botões: Continuar, Voltar ao Menu e Voltar ao Desktop. Para pausar, é usado o comando Time.TimeScale = 0.0f, que deixa o jogo pausado, logo após, é carregado o menu de pausa com o SetActive(true). Para voltar ao menu, é utilizado o comando SceneManager.LoadSceneAsync("Menu"), para ir ao desktop, é utilizado o Application.Exit(), para continuar é apenas desativado o menu de pausa, e o valor do Time.timescale é colocado em 1, que é a velocidade padrão do jogo
-- Final: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
+
+
+
+
 
 ## Referências:
 
