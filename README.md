@@ -169,7 +169,17 @@ ________________________________________________________________________________
 
 
 # Cores
-- Para o jogo, foram-se utilizadas de cores mais cinzas e escuras, com esse padrão sendo quebrado somente para alguns objetos com o objetivo de seguir, em partes, fielmente as cores de determinado objeto na vida real (como é o caso das máquinas de refrigerante na estação, cadeiras, dentre outros). Além do cinza, foi-se muito utilizado do branco e também do marrom mais escuro e claro, sempre fazendo uma troca entre esses dois.
+- Como podemos observar pelas imagens dos materiais utilizados no nosso projeto (em resumo, as cores que usamos para pintar o cenário e os móveis), predominantemente temos uma paleta de cores "fria", as quais além de transmitir a sensação de frio, também servem para transmitir a rotina desgastante de nosso protagonista. Em alguns casos, como a texturização de móveis ou objetos específicos, esse padrão se altera e utilizamos de cores mais claras e chamativas, mas no geral, o jogo utiliza de uma paleta mais puxada para o cinza, preto e branco.
+
+`Rua`
+
+![image](https://github.com/user-attachments/assets/6d224c76-e314-44a7-b03e-2b88ae00241c)
+<br>
+
+`Estação`
+
+![image](https://github.com/user-attachments/assets/c357e5e8-7e8f-40fd-a08d-9cd9c73daad2)
+<br>
 _________________________________________________________________________________________________________________________________ 
 
 
