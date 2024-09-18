@@ -38,20 +38,35 @@ ________________________________________________________________________________
 # Scripts:
 - Os scripts criados para o jogo foram:
   1 - MenuPausa
+  
   2 - GameOver
+  
   3 - CriaCena
+  
   4 - Spawn
+  
   5 - Colisao
+  
   6 - cronometro
+  
   7 - Jogar
+  
   8 - Sobre
+  
   9 - TrocarCena
+  
   10 - MovCam
+  
   11 - MovNPC
+  
   12 - MovPers
+  
   13 - perfis
+  
   14 - ScriptCutsceneFinal
+  
   15 - ScriptFinal
+  
   16 - voltae
 
  ## - Cenario (Pasta)
