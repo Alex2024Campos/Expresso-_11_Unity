@@ -41,9 +41,6 @@ ________________________________________________________________________________
  ## - Cenario (Pasta)
  
  -> Colisao: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
-<br>
-
- -> CriarCena:
   <br>
   
  -> Spawn: O Spawn é colocado em um objeto vazio, fazendo-o se mover em zig-zag para a direita e spawnar de forma randomica os modelos separados previamente (nesse caso, estão dentro de um objeto vazio chamado "Npcs"). Foi imposto um limite em que esse objeto vazio pode se locomover no eixo X, o parando quando se aproxima da estação e ainda sim mantendo o movimento de zig-zag e o spawn dos modelos.
