@@ -1,4 +1,4 @@
-# Expresso_11
+![image](https://github.com/user-attachments/assets/ebd07a1e-1296-4bb9-be77-50b33aaf690a)# Expresso_11
 >[!Important]
 ` - Projeto:`
 >- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
@@ -23,7 +23,7 @@
 >- `Sobre nós (adicionado)`: Uma interface com fotos dos desenvolvedores do expresso 11 e com botões que levão para as contas do GitHub de cada um foi adicionada durante o projeto.
 
 > [!TIP]
->- Gameplay:
+>- `Gameplay`:
 
 https://github.com/user-attachments/assets/10ab424d-d603-40bb-a4b7-0a90c57bcb2d
 
