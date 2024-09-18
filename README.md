@@ -35,6 +35,8 @@ ________________________________________________________________________________
 -  Juninho da Silva Cleidson é alguém de origem humilde que mora com sua esposa, Alexandria, no Bairro Bom Retiro. Enquanto sua esposa, atualmente desempregada, está focada nas tarefas de casa, Juninho depende de seu emprego para pagar as despesas e trazer a comida. Outros personagens são os NPCs nas ruas, que serão obstáculos do protagonista. Estes, estão fazendo suas atividades diversas do dia a dia, mas infelizmente seu destino fica na direção oposta do de Juninho. 
  Certo dia, enquanto estava afundado em suas fantasias do sono, Juninho é acordado pelo temível som de seu despertador – “Já são 10:45”, a fatídica voz robótica do alarme se mostrou o suficiente para fazê-lo levantar em desespero, preparar as suas coisas às pressas e se retirar de casa com sua mochila, não conseguindo nem mesmo se despedir de Alexandria, pois a pontualidade em seu emprego é rígida. 
  Ele então parte de sua morada na direção da estação mais próxima na tentativa de chegar a tempo.
+ Durante sua jornada, ele salta e desvia de seus obstáculos pela rua, correndo contra o tempo, eventualmente chegando na estação. Lá, seu tempo está ainda mais curto, ele salta por cima de catracas e esquiva das pessoas em seu caminho.
+ No fim, todo o esforço de Juninho valeu a pena, e ele chega a tempo de pegar o trem.
 <br>
 _________________________________________________________________________________________________________________________________ 
 
