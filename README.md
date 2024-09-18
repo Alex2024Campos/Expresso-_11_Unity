@@ -16,14 +16,15 @@
 
 > [!NOTE]
 > `- Alterações do Jogo:`
->- Script CriarCena (retirado): O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
->- Cena "Esgoto"  (retirado): Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
->- Ataque "Voadora"  (retirado): Devido aos problemas para fazer a animação funcionar e a criação de uma colisão para eliminar os inimigos ao ser utilizada, a voadora foi retirada do jogo.
->- Timer (alterado): Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para 5 minutos na "Rua" e 3 minutos na "Estação".
->- Sobre nós (adicionad): Uma interface com fotos dos desenvolvedores do expresso 11 e com botões que levão para as contas do GitHub de cada um foi adicionada durante o projeto.
+>- `Script CriarCena (retirado)`: O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
+>- `Cena "Esgoto"  (retirado)`: Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
+>- `Ataque "Voadora"  (retirado)`: Devido aos problemas para fazer a animação funcionar e a criação de uma colisão para eliminar os inimigos ao ser utilizada, a voadora foi retirada do jogo.
+>- `Timer (alterado)`: Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para 5 minutos na "Rua" e 3 minutos na "Estação".
+>- `Sobre nós (adicionado)`: Uma interface com fotos dos desenvolvedores do expresso 11 e com botões que levão para as contas do GitHub de cada um foi adicionada durante o projeto.
 
 > [!TIP]
 >- Gameplay:
+
 https://github.com/user-attachments/assets/10ab424d-d603-40bb-a4b7-0a90c57bcb2d
 
 _________________________________________________________________________________________________________________________________ 
@@ -32,7 +33,9 @@ ________________________________________________________________________________
 
 # História do Game:
 -  Juninho da Silva Cleidson é alguém de origem humilde que mora com sua esposa, Alexandria, no Bairro Bom Retiro. Enquanto sua esposa, atualmente desempregada, está focada nas tarefas de casa, Juninho depende de seu emprego para pagar as despesas e trazer a comida. Outros personagens são os NPCs nas ruas, que serão obstáculos do protagonista. Estes, estão fazendo suas atividades diversas do dia a dia, mas infelizmente seu destino fica na direção oposta do de Juninho. 
+<br>
  Certo dia, enquanto estava afundado em suas fantasias do sono, Juninho é acordado pelo temível som de seu despertador – “Já são 10:45”, a fatídica voz robótica do alarme se mostrou o suficiente para fazê-lo levantar em desespero, preparar as suas coisas às pressas e se retirar de casa com sua mochila, não conseguindo nem mesmo se despedir de Alexandria, pois a pontualidade em seu emprego é rígida. 
+<br>
  Ele então parte de sua morada na direção da estação mais próxima na tentativa de chegar a tempo.
 _________________________________________________________________________________________________________________________________ 
 
@@ -43,7 +46,6 @@ ________________________________________________________________________________
 
 
 # Animações:
-- As animações foram planejadas e organizadas com base em dois vídeos do Youtube (https://youtu.be/cndsQp-Yuzw?si=o3vLwQLL8izTha3g e https://youtu.be/ugqhZBJpH9w?si=zt8iy4wPhLOBkDRq). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, aonde tiveram suas texturas carregadas e os tipos separados por pastas (animações, personagens e controllers). Para cada personagem e NPC, foi-se feito um controller para fazer o carregamento da animação sem nenhum problema, pois cada uma deveria ser carregada com o modelo que fosse ser utilizado na Mixamo. Com os controller criados, só foi necessário puxar as animações para dentro do painel e deixa-las como default em cada um. Vale ressaltar que, após baixadas as animações com os modelos de cada personagem, as mesmas foram retiradas com ctrl + D da pasta que já vinham e essa pasta, apagada.
 - As animações foram feitas utilizando-se de base dois vídeos do Youtube ( e ). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, assim tendo suas texturas carregadas e separadas por personagem e tipo (animações, personagens, etc). Para cada personagem e NPC, foi feito um controller e um animator (o animator oferecia uma interface para manipularmos as animações e o controller serve como uma forma de manipular a animação, como por exemplo: criar um parâmetro que chame uma animação de corrida quando o valor for igual a três) para o carregamento da animação, é importante saber que isso foi feito pois cada animação da Mixamo necessitava ser instalado com o modelo de personagem, também da Mixamo, que fosse ser colocada para assim funcionar no jogo. Outra coisa importante é que, as animações utilizadas no Expresso 11, foram retiradas do pacote que elas estão inicialmente com Ctrl + D (a imagem se assemelha a um triângulo azul).. Com os controllers já criados, só foi necessário puxar as animações para o painel do controle e deixa-lás como default (que no caso, já vem como padrão), assim tínhamos as animações. 
 _________________________________________________________________________________________________________________________________ 
 
