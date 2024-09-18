@@ -23,6 +23,7 @@
 
 > [!TIP]
 >- Gameplay:
+
 https://github.com/user-attachments/assets/8844c4da-32dd-43eb-bdd7-10f0b96e27ac
 
 _________________________________________________________________________________________________________________________________ 
@@ -79,36 +80,11 @@ ________________________________________________________________________________
   
   16 - voltae
 
- ## - Cenario (Pasta)
- 
- -> Colisao: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
-  <br>
-  
+ ## Mecânicas
  -> Spawn: O Spawn é colocado em um objeto vazio, fazendo-o se mover em zig-zag para a direita e spawnar de forma randomica os modelos separados previamente (nesse caso, estão dentro de um objeto vazio chamado "Npcs"). Foi imposto um limite em que esse objeto vazio pode se locomover no eixo X, o parando quando se aproxima da estação e ainda sim mantendo o movimento de zig-zag e o spawn dos modelos.
- <br>
- 
- ## - Jogo (Pasta)
- -> cronometro: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
- <br>
- 
- -> GameOver: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
- <br>
- 
- -> Jogar: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
- <br>
- 
- -> MenuPausa: É o código que ativa e desativa o menu de pausa do jogo
- <br>
- 
- -> Sobre: O script que controla o aba Sobre Nós do menu principal 
- <br>
- 
- -> Trocar_cena: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
- <br>
- 
- ## - Movimentação_Personagem (Pasta)
- <br>
- 
+ <br> 
+
+ ## Movimentação 
  -> MovCam: É o código que tem a movimentação da câmera, a qual, segue o objeto selecionado que no caso do Expresso 11, é o "player".
  <br>
  
@@ -116,6 +92,30 @@ ________________________________________________________________________________
  <br>
  
  -> movPers: Tem a função de conter a movimentação do jogador, o qual pode ser mover para cima, baixo e pular (teclas, respectivamente: W, S, Space). Tem uma velocidade constante no eixo X, o qual aparece no eixo Z dentro do script devido a manipulação da rotação dos modelos da Mixamo (que é utilizado nos personagens e, como já é de se imaginar, no player também) que acabou por bugar um pouco os eixos.
+ 
+## Colisão
+ -> Colisao: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
+ <br>
+  
+## Cenas e UI:
+
+ -> Jogar: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
+ <br>
+
+ -> GameOver: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
+ <br>
+ 
+ -> Trocar_cena: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
+ <br>
+ 
+ -> cronometro: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
+ <br>
+ 
+ -> MenuPausa: É o código que ativa e desativa o menu de pausa do jogo
+ <br>
+ 
+ -> Sobre: O script que controla o aba "Sobre Nós" do menu principal 
+ <br>
 _________________________________________________________________________________________________________________________________ 
 
 
