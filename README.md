@@ -4,7 +4,13 @@
 >- Escola: Etec Prof. Basilides de Godoy.
 >- Sobre: Repositório para a documentação do jogo Expresso 11, desenvolvido para a feira cultural da Etec Prof. Basilides de Godoy.
 >- Datas: Gravar as fases (Quinta), entregar a documentação (Quinta), apresentação do jogo (Quinta).
->- Projeto (drive): https://drive.google.com/drive/u/0/folders/11AYAafGOKnD0kKMby2S_ybv2LrDbRA2h{
+>- Projeto (drive): https://drive.google.com/drive/u/0/folders/11AYAafGOKnD0kKMby2S_ybv2LrDbRA2h
+
+> `Alterações do Jogo`
+> ### Script CriarCena (retirado): O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
+> ### Cena "Esgoto"  (retirado): Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
+> ### Ataque "Voadora"  (retirado): Devido aos problemas para fazer a animação funcionar e a criação de uma colisão para eliminar os inimigos ao ser utilizada, a voadora foi retirada do jogo.
+> ### Timer (alterado): Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para x minuitos (!!!!colocar o timer) na "Rua" e x minutos (!!!!!!colocartambém) na "Estação".
 _________________________________________________________________________________________________________________________________ 
 
 
@@ -26,8 +32,9 @@ ________________________________________________________________________________
  Certo dia, enquanto estava afundado em suas fantasias do sono, Juninho é acordado pelo temível som de seu despertador – “Já são 10:45”, a fatídica voz robótica do alarme se mostrou o suficiente para fazê-lo levantar em desespero, preparar as suas coisas às pressas e se retirar de casa com sua mochila, não conseguindo nem mesmo se despedir de Alexandria, pois a pontualidade em seu emprego é rígida. 
  Ele então parte de sua morada na direção da estação mais próxima na tentativa de chegar a tempo.
 _________________________________________________________________________________________________________________________________ 
-
-
+# Animações:
+- As animações foram planejadas e organizadas com base em dois vídeos do Youtube (https://youtu.be/cndsQp-Yuzw?si=o3vLwQLL8izTha3g e https://youtu.be/ugqhZBJpH9w?si=zt8iy4wPhLOBkDRq). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, aonde tiveram suas texturas carregadas e os tipos separados por pastas (animações, personagens e controllers). Para cada personagem e NPC, foi-se feito um controller para fazer o carregamento da animação sem nenhum problema, pois cada uma deveria ser carregada com o modelo que fosse ser utilizado na Mixamo. Com os controller criados, só foi necessário puxar as animações para dentro do painel e deixa-las como default em cada um. Vale ressaltar que, após baixadas as animações com os modelos de cada personagem, as mesmas foram retiradas com ctrl + D da pasta que já vinham e essa pasta, apagada.
+_________________________________________________________________________________________________________________________________ 
 
 # Colisões:
 - As colisões de nosso jogo foram utilizadas, principalmente, para a criação do contato, diminuição do "timer" do personagem principal e para a destruição dos Npcs que colidissem (os inimigos do jogo), mas também utilizamos delas para fazer a troca de cenas e trazer o aumento do som da música do jogo. A príncipio, foram-se feitos objetos vazios e só após isso, adicionadas as colisões (box collider) nesses objetos vazios (houve a necessidade de alterar as caixas de colisões deles), vale também ressaltar que essa tátitca foi utilizada somente para: a ação de trocar de cena e o aumento do som. Agora, para os Npcs do jogo foi somente adicionado um Box Collider nos modelos pré-separados para fazer a identificação da colisão e, no caso da destruição dos inimigos (que são clonados para a repetição dos mesmos), foi-se feito um código para deleta-los após ultrapassarem determinada distância no eixo X.
