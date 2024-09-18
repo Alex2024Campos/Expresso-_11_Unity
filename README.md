@@ -5,7 +5,7 @@
 >- Sobre: Repositório para a documentação do jogo Expresso 11, desenvolvido para a feira cultural da Etec Prof. Basilides de Godoy.
 >- Datas: Gravar as fases (Quinta), entregar a documentação (Quinta), apresentação do jogo (Quinta).
 >- Projeto (drive): https://drive.google.com/drive/u/0/folders/11AYAafGOKnD0kKMby2S_ybv2LrDbRA2h{
->- _________________________________________________________________________________________________________________________________ 
+_________________________________________________________________________________________________________________________________ 
 
 
 
