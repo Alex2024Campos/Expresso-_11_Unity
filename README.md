@@ -44,6 +44,7 @@ ________________________________________________________________________________
 
 # Animações:
 - As animações foram planejadas e organizadas com base em dois vídeos do Youtube (https://youtu.be/cndsQp-Yuzw?si=o3vLwQLL8izTha3g e https://youtu.be/ugqhZBJpH9w?si=zt8iy4wPhLOBkDRq). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, aonde tiveram suas texturas carregadas e os tipos separados por pastas (animações, personagens e controllers). Para cada personagem e NPC, foi-se feito um controller para fazer o carregamento da animação sem nenhum problema, pois cada uma deveria ser carregada com o modelo que fosse ser utilizado na Mixamo. Com os controller criados, só foi necessário puxar as animações para dentro do painel e deixa-las como default em cada um. Vale ressaltar que, após baixadas as animações com os modelos de cada personagem, as mesmas foram retiradas com ctrl + D da pasta que já vinham e essa pasta, apagada.
+- As animações foram feitas utilizando-se de base dois vídeos do Youtube ( e ). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, assim tendo suas texturas carregadas e separadas por personagem e tipo (animações, personagens, etc). Para cada personagem e NPC, foi feito um controller e um animator (o animator oferecia uma interface para manipularmos as animações e o controller serve como uma forma de manipular a animação, como por exemplo: criar um parâmetro que chame uma animação de corrida quando o valor for igual a três) para o carregamento da animação, é importante saber que isso foi feito pois cada animação da Mixamo necessitava ser instalado com o modelo de personagem, também da Mixamo, que fosse ser colocada para assim funcionar no jogo. Outra coisa importante é que, as animações utilizadas no Expresso 11, foram retiradas do pacote que elas estão inicialmente com Ctrl + D (a imagem se assemelha a um triângulo azul).. Com os controllers já criados, só foi necessário puxar as animações para o painel do controle e deixa-lás como default (que no caso, já vem como padrão), assim tínhamos as animações. 
 _________________________________________________________________________________________________________________________________ 
 
 
@@ -63,7 +64,7 @@ ________________________________________________________________________________
 
 # Scripts:
 - Os scripts criados para o jogo foram:
-- 
+  
   1 - MenuPausa
   
   2 - GameOver
@@ -96,41 +97,42 @@ ________________________________________________________________________________
   
   16 - voltae
 
+
  ## Mecânicas
- -> Spawn: O Spawn é colocado em um objeto vazio, fazendo-o se mover em zig-zag para a direita e spawnar de forma randomica os modelos separados previamente (nesse caso, estão dentro de um objeto vazio chamado "Npcs"). Foi imposto um limite em que esse objeto vazio pode se locomover no eixo X, o parando quando se aproxima da estação e ainda sim mantendo o movimento de zig-zag e o spawn dos modelos.
+ `Spawn`: O Spawn é colocado em um objeto vazio, fazendo-o se mover em zig-zag para a direita e spawnar de forma randomica os modelos separados previamente (nesse caso, estão dentro de um objeto vazio chamado "Npcs"). Foi imposto um limite em que esse objeto vazio pode se locomover no eixo X, o parando quando se aproxima da estação e ainda sim mantendo o movimento de zig-zag e o spawn dos modelos.
  <br> 
 
  ## Movimentação 
- -> MovCam: É o código que tem a movimentação da câmera, a qual, segue o objeto selecionado que no caso do Expresso 11, é o "player".
+ -> `MovCam`: É o código que tem a movimentação da câmera, a qual, segue o objeto selecionado que no caso do Expresso 11, é o "player".
  <br>
  
- -> MovNpc: É a movimentação dos Npcs (inimigos) que se movem somente no eixo X para a esquerda. Não tem nada a mais, é somente uma movimentação constante para a esquerda e que, após ultrapassar determinada posição, deleta o determinado objeto.
+ -> `MovNpc`: É a movimentação dos Npcs (inimigos) que se movem somente no eixo X para a esquerda. Não tem nada a mais, é somente uma movimentação constante para a esquerda e que, após ultrapassar determinada posição, deleta o determinado objeto.
  <br>
  
- -> movPers: Tem a função de conter a movimentação do jogador, o qual pode ser mover para cima, baixo e pular (teclas, respectivamente: W, S, Space). Tem uma velocidade constante no eixo X, o qual aparece no eixo Z dentro do script devido a manipulação da rotação dos modelos da Mixamo (que é utilizado nos personagens e, como já é de se imaginar, no player também) que acabou por bugar um pouco os eixos.
+ -> `movPers`: Tem a função de conter a movimentação do jogador, o qual pode ser mover para cima, baixo e pular (teclas, respectivamente: W, S, Space). Tem uma velocidade constante no eixo X, o qual aparece no eixo Z dentro do script devido a manipulação da rotação dos modelos da Mixamo (que é utilizado nos personagens e, como já é de se imaginar, no player também) que acabou por bugar um pouco os eixos.
  
 ## Colisão
- -> Colisao: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
+ -> `Colisao`: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
  <br>
   
 ## Cenas e UI:
 
- -> Jogar: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
+ -> `Jogar`: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
  <br>
 
- -> GameOver: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
+ -> `GameOver`: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
  <br>
  
- -> Trocar_cena: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
+ -> `Trocar_cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
  <br>
  
- -> cronometro: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
+ -> `cronometro`: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
  <br>
  
- -> MenuPausa: É o código que ativa e desativa o menu de pausa do jogo
+ -> `MenuPausa`: É o código que ativa e desativa o menu de pausa do jogo
  <br>
  
- -> Sobre: O script que controla o aba "Sobre Nós" do menu principal 
+ -> `Sobre`: O script que controla o aba "Sobre Nós" do menu principal 
  <br>
  _________________________________________________________________________________________________________________________________ 
 
@@ -163,7 +165,7 @@ ________________________________________________________________________________
 
 
 # AssetStore e Criação de Cena:
-- Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes) abaixo não foram utilizados para a composição do cenário, sendo retirados devido a falta de outros modelos de texturas semelhantes para complementa-los, no entanto, connseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde um continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados.
+- Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes) abaixo não foram utilizados para a composição do cenário, sendo retirados devido a falta de outros modelos de texturas semelhantes para complementa-los, no entanto, connseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde um continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados, além de alguns modelos terem sido criados a mão com modelos de outros pacotes ou com os objetos do próprio Unity (é o caso da catraca). 
 
 
 
