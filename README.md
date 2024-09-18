@@ -23,10 +23,7 @@
 
 > [!TIP]
 >- Gameplay:
-
-
-https://github.com/user-attachments/assets/6dd0b593-73a9-4ecd-8c8d-a7fe361e9bd6
-
+https://github.com/user-attachments/assets/8844c4da-32dd-43eb-bdd7-10f0b96e27ac
 
 _________________________________________________________________________________________________________________________________ 
 
