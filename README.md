@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ebd07a1e-1296-4bb9-be77-50b33aaf690a)# Expresso_11
+# Expresso_11
 >[!Important]
 ` - Projeto:`
 >- Turma: 2°Mtec Desenvolvimento de Jogos Digitais.
