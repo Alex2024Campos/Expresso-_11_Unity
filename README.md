@@ -14,6 +14,7 @@
 >- Guilherme Henrique
 >- Igor Michelini
 
+> [!NOTE]
 > `- Alterações do Jogo:`
 > ### Script CriarCena (retirado): O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
 > ### Cena "Esgoto"  (retirado): Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
