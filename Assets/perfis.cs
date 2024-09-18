@@ -6,6 +6,18 @@ public class perfis : MonoBehaviour
 {
     public void GamesClick()
     {
-        Application.OpenURL("https://bsky.app/profile/michelinidev.bsky.social");
+        Application.OpenURL("https://github.com/MicheliniDev");
+    }
+    public void AlexClick()
+    {
+        Application.OpenURL("https://github.com/Alex2024Campos");
+    }
+    public void SedexClick()
+    {
+        Application.OpenURL("https://github.com/GuilhermeHLSouza");
+    }
+    public void ChristianClick()
+    {
+        Application.OpenURL("https://github.com/ChristianVarandas");
     }
 }

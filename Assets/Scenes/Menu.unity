@@ -625,7 +625,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 282881883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 956267639}
+        m_TargetAssemblyTypeName: perfis, Assembly-CSharp
+        m_MethodName: ChristianClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &282881883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +940,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 391079163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 956267639}
+        m_TargetAssemblyTypeName: perfis, Assembly-CSharp
+        m_MethodName: SedexClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &391079163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,7 +4611,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1441265048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 956267639}
+        m_TargetAssemblyTypeName: perfis, Assembly-CSharp
+        m_MethodName: AlexClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1441265048
 MonoBehaviour:
   m_ObjectHideFlags: 0
