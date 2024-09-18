@@ -33,9 +33,7 @@ ________________________________________________________________________________
 
 # História do Game:
 -  Juninho da Silva Cleidson é alguém de origem humilde que mora com sua esposa, Alexandria, no Bairro Bom Retiro. Enquanto sua esposa, atualmente desempregada, está focada nas tarefas de casa, Juninho depende de seu emprego para pagar as despesas e trazer a comida. Outros personagens são os NPCs nas ruas, que serão obstáculos do protagonista. Estes, estão fazendo suas atividades diversas do dia a dia, mas infelizmente seu destino fica na direção oposta do de Juninho. 
-<br>
  Certo dia, enquanto estava afundado em suas fantasias do sono, Juninho é acordado pelo temível som de seu despertador – “Já são 10:45”, a fatídica voz robótica do alarme se mostrou o suficiente para fazê-lo levantar em desespero, preparar as suas coisas às pressas e se retirar de casa com sua mochila, não conseguindo nem mesmo se despedir de Alexandria, pois a pontualidade em seu emprego é rígida. 
-<br>
  Ele então parte de sua morada na direção da estação mais próxima na tentativa de chegar a tempo.
 _________________________________________________________________________________________________________________________________ 
 
@@ -105,36 +103,36 @@ ________________________________________________________________________________
  <br> 
 
  ## Movimentação 
- -> `MovCam`: É o código que tem a movimentação da câmera, a qual, segue o objeto selecionado que no caso do Expresso 11, é o "player".
+  `MovCam`: É o código que tem a movimentação da câmera, a qual, segue o objeto selecionado que no caso do Expresso 11, é o "player".
  <br>
  
- -> `MovNpc`: É a movimentação dos Npcs (inimigos) que se movem somente no eixo X para a esquerda. Não tem nada a mais, é somente uma movimentação constante para a esquerda e que, após ultrapassar determinada posição, deleta o determinado objeto.
+  `MovNpc`: É a movimentação dos Npcs (inimigos) que se movem somente no eixo X para a esquerda. Não tem nada a mais, é somente uma movimentação constante para a esquerda e que, após ultrapassar determinada posição, deleta o determinado objeto.
  <br>
  
- -> `movPers`: Tem a função de conter a movimentação do jogador, o qual pode ser mover para cima, baixo e pular (teclas, respectivamente: W, S, Space). Tem uma velocidade constante no eixo X, o qual aparece no eixo Z dentro do script devido a manipulação da rotação dos modelos da Mixamo (que é utilizado nos personagens e, como já é de se imaginar, no player também) que acabou por bugar um pouco os eixos.
+  `movPers`: Tem a função de conter a movimentação do jogador, o qual pode ser mover para cima, baixo e pular (teclas, respectivamente: W, S, Space). Tem uma velocidade constante no eixo X, o qual aparece no eixo Z dentro do script devido a manipulação da rotação dos modelos da Mixamo (que é utilizado nos personagens e, como já é de se imaginar, no player também) que acabou por bugar um pouco os eixos.
  
 ## Colisão
- -> `Colisao`: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
+ `Colisao`: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruido e o tempo do cronometro é subtraido por 10 (diminue 10 segundos).
  <br>
+
   
 ## Cenas e UI:
-
- -> `Jogar`: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
+  `Jogar`: Como o GameOver, acaba sendo útil para que quando pressionado o botão de iniciar, o jogo inicie na cena "Rua".
  <br>
 
- -> `GameOver`: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
+  `GameOver`: Serve para que, quando o jogador perder o jogo e aparecer o menu de derrota (vulgo telaGameOver), seja possível que o mesmo aperte o botão de reiniciar e ai recomeçar o jogo (eu acho).
  <br>
  
- -> `Trocar_cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
+  `Trocar_cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena que foi posta previamente no objeto dentro do unity (é uma string pública).
  <br>
  
- -> `cronometro`: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
+  `cronometro`: É o script que tem os códigos para a criação do timer, a sua constante queda e também o que chama, no caso de o timer chegar a zero, o telaGameOver e desativa a música.
  <br>
  
- -> `MenuPausa`: É o código que ativa e desativa o menu de pausa do jogo
+  `MenuPausa`: É o código que ativa e desativa o menu de pausa do jogo
  <br>
  
- -> `Sobre`: O script que controla o aba "Sobre Nós" do menu principal 
+  `Sobre`: O script que controla o aba "Sobre Nós" do menu principal 
  <br>
  _________________________________________________________________________________________________________________________________ 
 
@@ -144,11 +142,20 @@ ________________________________________________________________________________
 
 
 # UI
-- Menu: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), que é apenas ativado ao clique do botão, utilizando o comando SetActive(True)
-- Cronometro: O Cronometro é novamente feito com um Text - TextMeshPro, na aba do código é primeiro definido a quantidade de segundos para o jogo. Depois no método Update() é criada uma condiçãp: Se tempoRestate > 0, diminua o tempo por deltaTime, isso faz com que o cronometro diminua em um valor constante, independente do quão potente é o computador, caso contrário, ele mostra a tela de derrota. Logo após isso, são criadas duas variáveis locais: minutos e segundos, que recebem o valor de tempoRestante em segundos e formatam usando divisão e módulo para o valor desejado. Depois de utiliza o comando String.Format para formatar e mostrar o tempo restante de uma forma melhor
-- Game Over: É um painel transparente, que é ativado a partir do script do cronômetro, quando o valor do tempoRestante chega a 0, é composto por um Text e um Button e um comando Time.timescale = 0.0f, para pausar o jogo completamenete. O botão tem o código SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name) que carrega a cena atual novamente
-- Menu de Pausa: É um painel com três botões: Continuar, Voltar ao Menu e Voltar ao Desktop. Para pausar, é usado o comando Time.TimeScale = 0.0f, que deixa o jogo pausado, logo após, é carregado o menu de pausa com o SetActive(true). Para voltar ao menu, é utilizado o comando SceneManager.LoadSceneAsync("Menu"), para ir ao desktop, é utilizado o Application.Exit(), para continuar é apenas desativado o menu de pausa, e o valor do Time.timescale é colocado em 1, que é a velocidade padrão do jogo
-- Final: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
+`Menu`: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), que é apenas ativado ao clique do botão, utilizando o comando SetActive(True).
+<br>
+
+`Cronometro`: O Cronometro é novamente feito com um Text - TextMeshPro, na aba do código é primeiro definido a quantidade de segundos para o jogo. Depois no método Update() é criada uma condiçãp: Se tempoRestate > 0, diminua o tempo por deltaTime, isso faz com que o cronometro diminua em um valor constante, independente do quão potente é o computador, caso contrário, ele mostra a tela de derrota. Logo após isso, são criadas duas variáveis locais: minutos e segundos, que recebem o valor de tempoRestante em segundos e formatam usando divisão e módulo para o valor desejado. Depois de utiliza o comando String.Format para formatar e mostrar o tempo restante de uma forma melhor.
+<br>
+
+`Game Over`: É um painel transparente, que é ativado a partir do script do cronômetro, quando o valor do tempoRestante chega a 0, é composto por um Text e um Button e um comando Time.timescale = 0.0f, para pausar o jogo completamenete. O botão tem o código SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name) que carrega a cena atual novamente.
+<br>
+
+`Menu de Pausa`: É um painel com três botões: Continuar, Voltar ao Menu e Voltar ao Desktop. Para pausar, é usado o comando Time.TimeScale = 0.0f, que deixa o jogo pausado, logo após, é carregado o menu de pausa com o SetActive(true). Para voltar ao menu, é utilizado o comando SceneManager.LoadSceneAsync("Menu"), para ir ao desktop, é utilizado o Application.Exit(), para continuar é apenas desativado o menu de pausa, e o valor do Time.timescale é colocado em 1, que é a velocidade padrão do jogo.
+<br>
+
+`Final`: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
+<br>
 _________________________________________________________________________________________________________________________________ 
 
 
@@ -223,3 +230,9 @@ https://assetstore.unity.com/packages/3d/vehicles/land/korean-presidential-coach
 https://assetstore.unity.com/packages/3d/environments/urban/low-polygon-house-277446
  
 https://assetstore.unity.com/packages/3d/environments/urban/low-polygon-house-277446
+
+https://assetstore.unity.com/packages/3d/vehicles/simple-retro-car-291522
+
+https://assetstore.unity.com/packages/3d/props/furniture/automatic-revolving-door-153549
+
+https://assetstore.unity.com/packages/3d/environments/urban/simple-city-pack-plain-100348
