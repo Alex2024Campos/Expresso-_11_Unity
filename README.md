@@ -37,6 +37,7 @@ ________________________________________________________________________________
 
 # Scripts:
 - Os scripts criados para o jogo foram:
+- 
   1 - MenuPausa
   
   2 - GameOver
