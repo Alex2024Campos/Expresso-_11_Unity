@@ -120,7 +120,7 @@ ________________________________________________________________________________
  `Colisao`: É a colisão colocada nos Npcs para identificar quando houver contato com um gameobject de nome "player", caso ocorra esse contato, o objeto é destruído e o tempo do cronômetro é subtraído por 10 (diminue 10 segundos).
 
 ## Cenas
-`Trocar_Cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script Trocar_cena identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena posta previamente no objeto dentro do unity (é uma string pública).
+`Trocar_Cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script "Trocar_cena" identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena posta previamente no objeto dentro do unity (é uma string pública).
  <br>
 _________________________________________________________________________________________________________________________________ 
 
@@ -166,17 +166,13 @@ ________________________________________________________________________________
 <br>
 _________________________________________________________________________________________________________________________________ 
 
+# Músicas
+- O nosso jogo se inspira fortemente na música Trem das Onze, de Adoniran Barbosa. Tendo vestígios da obra na história e até mesmo sendo usada como música de fundo nos níveis, que começa em volume baixo, mas gradualmente aumenta, demonstrando como a audição, no início do dia, se inicia fraca e gradualmente o corpo volta a se acostumar com os sons. 
+_________________________________________________________________________________________________________________________________ 
 
-
-
-
-
-
-# AssetStore e Criação de Cena:
-- Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes) abaixo não foram utilizados para a composição do cenário, sendo retirados devido à falta de outros modelos de texturas semelhantes para complementá-los, no entanto, conseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde uma continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados, além de alguns modelos terem sido criados a mão com modelos de outros pacotes ou com os objetos do próprio Unity (é o caso da catraca).
-
-
-
+# Asset Store e Criação de Cena:
+- Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes") abaixo não foram utilizados para a composição do cenário, sendo retirados devido à falta de outros modelos de texturas semelhantes para complementá-los, no entanto, conseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde uma continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados, além de alguns modelos terem sido criados a mão com modelos de outros pacotes ou com os objetos do próprio Unity (é o caso da catraca).
+_________________________________________________________________________________________________________________________________ 
 
 
 ## Referências:
