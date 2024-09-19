@@ -38,7 +38,7 @@ ________________________________________________________________________________
  Durante sua jornada, ele salta e desvia de seus obstáculos pela rua, correndo contra o tempo, eventualmente chegando na estação. Lá, seu tempo está ainda mais curto, ele salta por cima de catracas e esquiva das pessoas em seu caminho.
  No fim, todo o esforço de Juninho valeu a pena, e ele chega a tempo de pegar o trem.
 <br>
-_________________________________________________________________________________________________________________________________ 
+_____________________________________________________________________________________________________________________________
 
 
 
@@ -49,7 +49,7 @@ ________________________________________________________________________________
 # Animações:
 - As animações foram feitas utilizando-se de base dois vídeos do Youtube ( e ). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, assim tendo suas texturas carregadas e separadas por personagem e tipo (animações, personagens, etc). Para cada personagem e NPC, foi feito um controller e um animator (o animator oferecia uma interface para manipularmos as animações e o controller serve como uma forma de manipular a animação, como, por exemplo: criar um parâmetro que chame uma animação de corrida quando o valor for igual a três) para o carregamento da animação, é importante saber que isso foi feito, pois cada animação da Mixamo necessitava ser instalado com o modelo de personagem, também da Mixamo, que fosse ser colocada para assim funcionar no jogo. Outra coisa importante é que, as animações utilizadas no Expresso 11, foram retiradas do pacote que elas estão inicialmente com Ctrl + D (a imagem se assemelha a um triângulo azul). Com os controllers já criados, só foi necessário puxar as animações para o painel do controle e deixá-las como default (que no caso, já vem como padrão), assim tínhamos as animações.
 <br>
-_________________________________________________________________________________________________________________________________ 
+______________________________________________________________________________________________________________________________ 
 
 
 
@@ -59,7 +59,7 @@ ________________________________________________________________________________
 # Colisões:
 - As colisões de nosso jogo foram utilizadas, principalmente, para a criação do contato, diminuição do "timer" do personagem principal e para a destruição dos Npcs que colidissem (os inimigos do jogo), mas também utilizamos delas para fazer a troca de cenas e trazer o aumento do som da música do jogo. A princípio, foram-se feitos objetos vazios e só após isso, adicionadas as colisões (box collider) nesses objetos vazios (houve a necessidade de alterar as caixas de colisões deles), vale também ressaltar que essa tática foi utilizada somente para: a ação de trocar de cena e o aumento do som. Agora, para os Npcs do jogo foi somente adicionado um Box Collider nos modelos pré-separados para fazer a identificação da colisão e, no caso da destruição dos inimigos (clonados para a repetição dos mesmos), foi-se feito um código para deletá-los após ultrapassarem determinada distância no eixo X.
 <br>
-_________________________________________________________________________________________________________________________________ 
+______________________________________________________________________________________________________________________________
 
 
 
