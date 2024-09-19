@@ -156,13 +156,41 @@ ________________________________________________________________________________
 - Como podemos observar pelas imagens dos materiais utilizados no nosso projeto (em resumo, as cores que usamos para pintar o cenário e os móveis), predominantemente temos uma paleta de cores "fria", as quais além de transmitir a sensação de frio, também servem para transmitir a rotina desgastante de nosso protagonista. Em alguns casos, como a texturização de móveis ou objetos específicos, esse padrão se altera e utilizamos de cores mais claras e chamativas, mas no geral, o jogo utiliza de uma paleta mais puxada para o cinza, preto e branco.
 
 `Rua`
-
-![image](https://github.com/user-attachments/assets/6d224c76-e314-44a7-b03e-2b88ae00241c)
-<br>
+| Objetos | Hexadecimal |
+| --- | --- |
+| Banco_1 | |
+| Banco_2 | |
+| Cadeiras_1 | |
+| Cercas | |
+| Entrada | |
+| Escada | |
+| Escada | |
+| Estrutura | |
+| Estrutura | |
+| Mesa_1 | |
+| Mesa_2 | |
+| Muro_1 | |
+| Muro_2 | |
+| Piso_1 | |
+| Piso_2 | |
+| Piso_ 2 | |
 
 `Estação`
+| Objetos | Hexadecimal |
+| --- | --- |
+| Arte_Para | |
+| Banco_1 | |
+| Banco_2 | |
+| Banco_3 | |
+| Barra | |
+| Cadeira | |
+| Estrutura | |
+| Estrutura | |
+| Planta_1 | |
+| Vaso_1 | |
+| Vaso_2 | |
 
-![image](https://github.com/user-attachments/assets/c357e5e8-7e8f-40fd-a08d-9cd9c73daad2)
+
 <br>
 _________________________________________________________________________________________________________________________________ 
 
