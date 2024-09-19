@@ -156,39 +156,45 @@ ________________________________________________________________________________
 - Como podemos observar pelas imagens dos materiais utilizados no nosso projeto (em resumo, as cores que usamos para pintar o cenário e os móveis), predominantemente temos uma paleta de cores "fria", as quais além de transmitir a sensação de frio, também servem para transmitir a rotina desgastante de nosso protagonista. Em alguns casos, como a texturização de móveis ou objetos específicos, esse padrão se altera e utilizamos de cores mais claras e chamativas, mas no geral, o jogo utiliza de uma paleta mais puxada para o cinza, preto e branco.
 
 `Rua`
-| Objetos | Hexadecimal |
+| Material | Hexadecimal |
 | --- | --- |
-| Banco_1 | |
-| Banco_2 | |
-| Cadeiras_1 | |
-| Cercas | |
-| Entrada | |
-| Escada | |
-| Escada | |
-| Estrutura | |
-| Estrutura | |
-| Mesa_1 | |
-| Mesa_2 | |
-| Muro_1 | |
-| Muro_2 | |
-| Piso_1 | |
-| Piso_2 | |
-| Piso_ 2 | |
+| Banco_1 | 708080 |
+| Banco_2 | 1E8063 |
+| Cadeiras_1 | 7D4C30 |
+| Cercas | 747B7A |
+| Entrada_Armazem_1 | 767676 |
+| Escada_estacao | FFFFFF |
+| Estrutura_1 | 1B1946 |
+| Estrutura_2 | FFFFFF (albedo, "plainrust") |
+| Lixeira_1 | (textura, "gravel" |
+| Lixo_1 | 00C722 |
+| Lixo_2 | 513AFF |
+| Lixo_3 | B24343 |
+| Madeira_1 | 8E7716, albedo "BA_Wood_01_A |
+| Mesa_1 | 91A5A9 |
+| Mesa_2 | FFFFFF, albedo "Durt" |
+| Muro_1 | FFFFFF, albedo  "MetalPlatesRusted" |
+| Muro_2 | FFFFFF, albedo "BA_Plastic_01" |
+| Piso_1 | 7F878, metallic "Asphalt Standard" |
+| Piso_2 | FFFFFF, albedo "Cement" |
+| Piso_ 2 | C5C5C5, albedo "BA_concrete_A" |
+| Piso_estacao | FFFFFF, albedo "MarbleWall_02" |
+| Rua_Posto | 404040 |
 
 `Estação`
-| Objetos | Hexadecimal |
+| Material | Hexadecimal |
 | --- | --- |
-| Arte_Para | |
-| Banco_1 | |
-| Banco_2 | |
-| Banco_3 | |
-| Barra | |
-| Cadeira | |
-| Estrutura | |
-| Estrutura | |
-| Planta_1 | |
-| Vaso_1 | |
-| Vaso_2 | |
+| Arte_Parede1 | 996039 |
+| Banco_1 | 565458 |
+| Banco_2 | 47768F |
+| Banco_3 | 7E5D3B |
+| Barra | CDC1C1 |
+| Cadeira | 000000 |
+| Estruturacms_2 | 666669 |
+| Estruturascm | FFFFFF |
+| Planta_1 | 226B29 |
+| Vaso_1 | 524C4C |
+| Vaso_2 | 69481C |
 
 
 <br>
