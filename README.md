@@ -20,7 +20,7 @@
 >- `Script CriarCena (retirado)`: O CriarCena foi retirado devido a sua complexidade (na questão da codificação) e a falta de harmonia com outros scripts, logo, foi de preferência da nossa equipe montar as cenas a mão.
 >- `Cena "Esgoto"  (retirado)`: Pela falta de tempo para desenvolver, arrumar e testar a cena Esgoto, a mesma foi retirada adjunto de seus inimigos (lizardman, um tipo de humano-reptil, e o rato).
 >- `Ataque "Voadora"  (retirado)`: Devido aos problemas para fazer a animação funcionar e a criação de uma colisão para eliminar os inimigos ao ser utilizada, a voadora foi retirada do jogo.
->- `Timer (alterado)`: Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para 5 minutos na "Rua" e 3 minutos na "Estação".
+>- `Timer (alterado)`: Anteriormente, era planejado para o timer se de 10 minutos e ter a mecânica de ser constante em ambas as cenas, ou seja, o timer final da cena "Rua" seria levado para a cena "Estação", mas devido a dificuldade para fazer isso e também pela decisão de retirar o script CriarCena, optamos por diminuir o timer para 5 minutos na "Rua" e 5 minutos na "Estação".
 >- `Sobre nós (adicionado)`: Uma interface com fotos dos desenvolvedores do expresso 11 e com botões que levão para as contas do GitHub de cada um foi adicionada durante o projeto.
 
 > [!NOTE]
