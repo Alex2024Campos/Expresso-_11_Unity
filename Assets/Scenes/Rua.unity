@@ -31530,7 +31530,7 @@ PrefabInstance:
       objectReference: {fileID: 1179249778}
     - target: {fileID: 5501815339529192362, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: tempoRestante
-      value: 295
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6976194969570391018, guid: 07ea9628ff0d0f44d846360537836b47, type: 3}
       propertyPath: m_Name

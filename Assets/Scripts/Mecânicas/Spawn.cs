@@ -62,7 +62,7 @@ public class Spawn : MonoBehaviour
 
         if (sceneName == "Estação")
         {
-            if (transform.position.x > -69.05)
+            if (transform.position.x > -90.34f)
             {
 
                 // Movimento para frente no eixo X
