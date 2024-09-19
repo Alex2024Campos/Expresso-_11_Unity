@@ -27,8 +27,7 @@
 
 https://github.com/user-attachments/assets/10ab424d-d603-40bb-a4b7-0a90c57bcb2d
 
-_________________________________________________________________________________________________________________________________ 
-
+_________________________________________________________________
 
 
 # História do Game:
@@ -38,7 +37,7 @@ ________________________________________________________________________________
  Durante sua jornada, ele salta e desvia de seus obstáculos pela rua, correndo contra o tempo, eventualmente chegando na estação. Lá, seu tempo está ainda mais curto, ele salta por cima de catracas e esquiva das pessoas em seu caminho.
  No fim, todo o esforço de Juninho valeu a pena, e ele chega a tempo de pegar o trem.
 <br>
-____________________________________________________________________________________________________________________________
+_________________________________________________________________
 
 
 
@@ -49,7 +48,7 @@ ________________________________________________________________________________
 # Animações:
 - As animações foram feitas utilizando-se de base dois vídeos do Youtube ( e ). Os modelos e animações, entretanto, foram pegos da Mixamo e extraídos para o Unity, assim tendo suas texturas carregadas e separadas por personagem e tipo (animações, personagens, etc). Para cada personagem e NPC, foi feito um controller e um animator (o animator oferecia uma interface para manipularmos as animações e o controller serve como uma forma de manipular a animação, como, por exemplo: criar um parâmetro que chame uma animação de corrida quando o valor for igual a três) para o carregamento da animação, é importante saber que isso foi feito, pois cada animação da Mixamo necessitava ser instalado com o modelo de personagem, também da Mixamo, que fosse ser colocada para assim funcionar no jogo. Outra coisa importante é que, as animações utilizadas no Expresso 11, foram retiradas do pacote que elas estão inicialmente com Ctrl + D (a imagem se assemelha a um triângulo azul). Com os controllers já criados, só foi necessário puxar as animações para o painel do controle e deixá-las como default (que no caso, já vem como padrão), assim tínhamos as animações.
 <br>
-____________________________________________________________________________________________________________________________
+_________________________________________________________________
 
 
 
@@ -59,7 +58,7 @@ ________________________________________________________________________________
 # Colisões:
 - As colisões de nosso jogo foram utilizadas, principalmente, para a criação do contato, diminuição do "timer" do personagem principal e para a destruição dos Npcs que colidissem (os inimigos do jogo), mas também utilizamos delas para fazer a troca de cenas e trazer o aumento do som da música do jogo. A princípio, foram-se feitos objetos vazios e só após isso, adicionadas as colisões (box collider) nesses objetos vazios (houve a necessidade de alterar as caixas de colisões deles), vale também ressaltar que essa tática foi utilizada somente para: a ação de trocar de cena e o aumento do som. Agora, para os Npcs do jogo foi somente adicionado um Box Collider nos modelos pré-separados para fazer a identificação da colisão e, no caso da destruição dos inimigos (clonados para a repetição dos mesmos), foi-se feito um código para deletá-los após ultrapassarem determinada distância no eixo X.
 <br>
-____________________________________________________________________________________________________________________________
+_________________________________________________________________
 
 
 
@@ -122,7 +121,7 @@ ________________________________________________________________________________
 ## Cenas
 `Trocar_Cena`: Utilizando-se de um objeto vazio e um collider inserido nele, o script "Trocar_cena" identifica se houve alguma colisão com o collider do objeto vazio "TrocarCena" e se ocorrer, troca para a próxima cena posta previamente no objeto dentro do unity (é uma string pública).
  <br>
-_________________________________________________________________________________________________________________________________ 
+_________________________________________________________________
 
 # UI
 `Menu`: O menu é uma cena separada, que carrega a cena "Rua" quando o jogador aperta no botão de jogar, utilizando do comando SceneManager.LoadSceneAsync("Rua"). Foram utilizados os componentes Text(TextMeshPro), Button e Panel. O menu Sobre Nós é um painel transparente (para manter o fundo do trem), sendo apenas ativado ao clique do botão, utilizando o comando SetActive(True).
@@ -145,8 +144,7 @@ ________________________________________________________________________________
 
 `Final`: Um painel preto, com os componentes Text e Button, com o Text descrevendo o que acontece no final e o botão contendo o código SceneManager.LoadSceneAsync("Menu"), para voltar ao menu.
 <br>
-_________________________________________________________________________________________________________________________________ 
-
+_________________________________________________________________
 
 
 
@@ -156,51 +154,66 @@ ________________________________________________________________________________
 - Como podemos observar pelas imagens dos materiais utilizados no nosso projeto (em resumo, as cores que usamos para pintar o cenário e os móveis), predominantemente temos uma paleta de cores "fria", as quais além de transmitir a sensação de frio, também servem para transmitir a rotina desgastante de nosso protagonista. Em alguns casos, como a texturização de móveis ou objetos específicos, esse padrão se altera e utilizamos de cores mais claras e chamativas, mas no geral, o jogo utiliza de uma paleta mais puxada para o cinza, preto e branco.
 
 `Rua`
-| Objetos | Hexadecimal |
+| Material | Hexadecimal |
 | --- | --- |
-| Banco_1 | |
-| Banco_2 | |
-| Cadeiras_1 | |
-| Cercas | |
-| Entrada | |
-| Escada | |
-| Escada | |
-| Estrutura | |
-| Estrutura | |
-| Mesa_1 | |
-| Mesa_2 | |
-| Muro_1 | |
-| Muro_2 | |
-| Piso_1 | |
-| Piso_2 | |
-| Piso_ 2 | |
+| Banco_1 | 708080 |
+| Banco_2 | 1E8063 |
+| Cadeiras_1 | 7D4C30 |
+| Cercas | 747B7A |
+| Entrada_Armazem_1 | 767676 |
+| Escada_estacao | FFFFFF |
+| Estrutura_1 | 1B1946 |
+| Estrutura_2 | FFFFFF (albedo, "plainrust") |
+| Lixeira_1 | (textura, "gravel" |
+| Lixo_1 | 00C722 |
+| Lixo_2 | 513AFF |
+| Lixo_3 | B24343 |
+| Madeira_1 | 8E7716, albedo "BA_Wood_01_A |
+| Mesa_1 | 91A5A9 |
+| Mesa_2 | FFFFFF, albedo "Durt" |
+| Muro_1 | FFFFFF, albedo  "MetalPlatesRusted" |
+| Muro_2 | FFFFFF, albedo "BA_Plastic_01" |
+| Piso_1 | 7F878, metallic "Asphalt Standard" |
+| Piso_2 | FFFFFF, albedo "Cement" |
+| Piso_ 2 | C5C5C5, albedo "BA_concrete_A" |
+| Piso_estacao | FFFFFF, albedo "MarbleWall_02" |
+| Rua_Posto | 404040 |
+<br>
+
+![Paleta_Rua](https://github.com/user-attachments/assets/da47ecf6-6528-4f16-bb15-faf7e03a8fba)
+
 
 `Estação`
-| Objetos | Hexadecimal |
+| Material | Hexadecimal |
 | --- | --- |
-| Arte_Para | |
-| Banco_1 | |
-| Banco_2 | |
-| Banco_3 | |
-| Barra | |
-| Cadeira | |
-| Estrutura | |
-| Estrutura | |
-| Planta_1 | |
-| Vaso_1 | |
-| Vaso_2 | |
+| Arte_Parede1 | 996039 |
+| Banco_1 | 565458 |
+| Banco_2 | 47768F |
+| Banco_3 | 7E5D3B |
+| Barra | CDC1C1 |
+| Cadeira | 000000 |
+| Estruturacms_2 | 666669 |
+| Estruturascm | FFFFFF |
+| Planta_1 | 226B29 |
+| Vaso_1 | 524C4C |
+| Vaso_2 | 69481C |
+<br>
+
+![Paleta_Estação](https://github.com/user-attachments/assets/37843f88-683c-4491-8dae-f0ce8fed0986)
+
+
 
 
 <br>
-_________________________________________________________________________________________________________________________________ 
+_________________________________________________________________
 
 # Músicas
 - O nosso jogo se inspira fortemente na música Trem das Onze, de Adoniran Barbosa. Tendo vestígios da obra na história e até mesmo sendo usada como música de fundo nos níveis, que começa em volume baixo, mas gradualmente aumenta, demonstrando como a audição, no início do dia, se inicia fraca e gradualmente o corpo volta a se acostumar com os sons. 
-_________________________________________________________________________________________________________________________________ 
+_________________________________________________________________
 
 # Asset Store e Criação de Cena:
 - Alguns dos conjuntos de modelos 3D (ou em outras palavras, "Pacotes") abaixo não foram utilizados para a composição do cenário, sendo retirados devido à falta de outros modelos de texturas semelhantes para complementá-los, no entanto, conseguimos achar modelos de Polygon (modelos poligonais, meio quadrado) para ocupar essa espaço. Para a composição das cenas do jogo, os pacotes tiveram seus modelos separados em: "Organizado" e "Others", aonde uma continha os modelos separados em tipo (móveis, veículos, etc) e outro para manter os "pacotes" originais, ou seja, as pastas de cada conjunto da AssetStore. Outros modelos pegos, nesse caso os dos personagens e as animações de corrida, vieram da Mixamo e colocados em uma pasta chamada de "Personagens" que continha outras sub-pastas que separavam animações, os obstáculos (Npcs), as animações e os controllers de cada modelo (esses controllers servem para controlar a questão das animações de cada modelo). Por fim, também foram feitas pastas para guardar e deixar melhor organizado as texturas e os materiais utilizados, além de alguns modelos terem sido criados a mão com modelos de outros pacotes ou com os objetos do próprio Unity (é o caso da catraca).
-_________________________________________________________________________________________________________________________________ 
+_________________________________________________________________
 
 
 ## Referências:
